@@ -51,6 +51,10 @@
     .trust{display:grid; grid-template-columns: repeat(3,1fr); gap:10px; margin-top:10px}
     .trust .chip{background:rgba(255,255,255,.08); padding:10px 12px; border-radius:12px; text-align:center; font-weight:700; color:#e7eaf3}
 
+    /* Bono de bienvenida (pill) */
+    .pill{display:inline-block; padding:6px 12px; border-radius:999px; background:linear-gradient(180deg, var(--accentA), var(--accentB)); color:#fff; font-weight:900; box-shadow:0 8px 24px var(--ring); letter-spacing:.2px}
+    .pill small{font-weight:800; opacity:.95}
+
     .panel{display:grid; gap:16px}
 
     .phone-demo{position:relative; border-radius:22px; overflow:hidden; height:480px; background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.12)}
@@ -110,10 +114,11 @@
           <li>⚡ <b>Métodos de pago locales</b> y verificados</li>
           <li>🔒 <b>Retiros sin límite</b> y soporte inmediato</li>
         </ul>
+        <div><span class="pill">🎁 Bono de bienvenida con tu carga <small>(consultá condiciones)</small></span></div>
         <div class="cta-row">
           <a id="cta-hero" class="cta" href="#" rel="noopener" aria-label="Hablar por WhatsApp">
             💬 Hablar por WhatsApp
-            <span class="tag" aria-hidden="true">Atención rápida</span>
+            <span class="tag" aria-hidden="true">Bono de bienvenida</span>
           </a>
           <button id="cta-alt" class="btn-ghost" type="button">Quiero empezar</button>
         </div>
@@ -158,14 +163,14 @@
 
   <!-- Recordatorio si volvió sin enviar -->
   <div id="reminder" class="reminder" role="status" aria-live="polite">
-    <div class="inner">⏳ ¿Te ayudo a <b>cargar ahora</b>? Abrí WhatsApp y enviá el mensaje para que te llamemos.</div>
+    <div class="inner">⏳ ¿Te ayudo a <b>cargar ahora</b>? Tu <b>bono de bienvenida</b> se activa con la primera carga. Abrí WhatsApp y enviá el mensaje.</div>
   </div>
 
   <!-- Exit intent / confirmación -->
   <div id="exit" class="exit-overlay" role="dialog" aria-modal="true" aria-labelledby="exit-title" aria-hidden="true">
     <div class="modal">
       <h3 id="exit-title">Abrí WhatsApp y enviá el mensaje</h3>
-      <p>Un asesor te responde en minutos. Si cerrás esta ventana por error, podés volver con el botón de abajo.</p>
+      <p>Un asesor te responde en minutos. Recordá: <b>tu bono de bienvenida se activa con tu primera carga</b>.</p>
       <div class="row">
         <a id="exit-open" class="cta" href="#" rel="noopener">💬 Abrir WhatsApp</a>
         <button id="exit-close" class="btn-ghost" type="button">Seguir navegando</button>
